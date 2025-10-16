@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import style from './ProfileCard.module.css'
 
 
 type Props = {
@@ -11,21 +12,11 @@ type Props = {
 
 export default function ProfileCard({avatar, name, job, hobby}: Props):JSX.Element{
   return (
-    <div
-       style={{
-        border: "2px solid #ccc",
-        borderRadius: "12px",
-        padding: "16px",
-        width: "220px",
-        textAlign: "center",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-        margin: "10px",
-      }}
-    >
+    <div className={style.card}>
       <img
         src={avatar}
         alt={name}
-        style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+        style={{ width: "100px", height: "100px"}}
       />
       <h3>{name}</h3>
       <p><b>Job: </b> {job}</p>

@@ -12,7 +12,7 @@ function App():JSX.Element {
   return (
    <div>
 <CarShop/>
- <h1>👤 Profile Cards</h1>
+ <h2> Profile Cards</h2>
 <Homework02/>
 
    </div>

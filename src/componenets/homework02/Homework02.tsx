@@ -5,21 +5,21 @@ import ProfileCard from "../ProfileCard/ProfileCard";
 export default function Homework02() {
 
     const user1 = {
-    avatar: "https://i.pravatar.cc/100?img=1",
+    avatar: "https://i.pravatar.cc/300",
     name: "John Lacks",
     job: "Teacher",
     hobby: "Traveling",
   };
 
   const user2 = {
-    avatar: "https://i.pravatar.cc/100?img=2",
+    avatar: "https://i.pravatar.cc/300",
     name: "Мaria Rosy",
     job: "Designer",
     hobby: "Drawing",
   };
 
   const user3 = {
-    avatar: "https://i.pravatar.cc/100?img=3",
+    avatar: "https://i.pravatar.cc/300",
     name: "Alejandro Outer",
     job: "Photograph",
     hobby: "Guitar",

@@ -13,7 +13,7 @@ export default function Homework02() {
 
   const user2 = {
     avatar: "https://i.pravatar.cc/150?img=45",
-    name: "Мaria Rosy",
+    name: "Maria Rosy",
     job: "Designer",
     hobby: "Drawing",
   };

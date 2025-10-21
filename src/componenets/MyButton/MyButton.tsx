@@ -8,14 +8,14 @@ export default function MyButton({onClick, children}: MyButtonProps) {
    <button
       onClick={onClick}
       style={{
-        backgroundColor: "#007bff",
+        backgroundColor: "#1a5492ff",
         color: "white",
         border: "none",
-        borderRadius: "8px",
-        padding: "10px 16px",
+        borderRadius: "6px",
+        padding: "8px 16px",
         cursor: "pointer",
         fontSize: "1rem",
-        margin: "5px",
+        margin: "7px",
         transition: "background-color 0.3s",
       }}
       // onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}

@@ -18,9 +18,7 @@ export default function MyButton({onClick, children}: MyButtonProps) {
         margin: "7px",
         transition: "background-color 0.3s",
       }}
-      // onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#0056b3")}
-      // onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#007bff")}
-    >
+        >
       {children}
     </button>
   )

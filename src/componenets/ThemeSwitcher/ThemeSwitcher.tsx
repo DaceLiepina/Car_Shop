@@ -5,9 +5,10 @@ type Theme = "light" | "dark";
 export function ThemeSwitcher(): JSX.Element {
   const [theme, setTheme] = useState<Theme>("light");
 
-  function toggleTheme(): void {
+  function toggleTheme(): void {  // teemu paarsleedzeejs
     setTheme((prev: Theme) => (prev === "light" ? "dark" : "light"));
   }
+// mainiigais, kas saglabaa css iipasiibas ar ternaraa operatora paliidziibu
 
   const pageStyle: React.CSSProperties =
     theme === "light"

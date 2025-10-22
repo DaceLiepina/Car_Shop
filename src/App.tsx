@@ -7,10 +7,18 @@ import Sandwich from "./componenets/Sandwich/Sandwich";
 import Alcohol from "./componenets/Alcohol/Alcohol";
 import { ThemeSwitcher } from "./componenets/ThemeSwitcher/ThemeSwitcher";
 import { InputMirror } from "./componenets/InputMirror/InputMirror";
+import Playground from "./componenets/Playground/Playground";
+import Dogs from "./componenets/Dogs/Dogs";
+import UsePage from "./componenets/UsePage/UsePage";
+import RandomJoke from "./componenets/RandomJoke/RandomJoke";
 
 function App(): JSX.Element {
   return (
     <div>
+      <RandomJoke/>
+      <UsePage/>
+      <Dogs/>
+      <Playground/>
       <InputMirror/>
       <ThemeSwitcher/>
       <Alcohol/>

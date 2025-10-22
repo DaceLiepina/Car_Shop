@@ -14,16 +14,16 @@ export function InputMirror(): JSX.Element {
 
   return (
     <div style={containerStyle}>
-      <label>
-        Введите текст:{" "}
+      <label>   
+        Enter the text: {" "} 
         <input
           type="text"
           value={text}
           onChange={handleChange}
-          placeholder="Начните вводить..."
+          placeholder="Enter the text..."
         />
       </label>
-      <p>Вы ввели: {text || "ничего"}</p>
+      <p>Вы ввели: {text || "nothing"}</p>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import style from "./Alcohol.module.css";
 
 export default function Alcohol(): JSX.Element {
@@ -15,18 +15,19 @@ export default function Alcohol(): JSX.Element {
     setName(strDrink);
     setImage(strDrinkThumb);
   }
+  useEffect(() => {
+    loadAlcohol();
+  }, []);
   return (
     <div>
       <h1>Alcohol : {name}</h1>
-        <button type="button" onClick={() => loadAlcohol()}>
-          Next Drink{" "}
-        </button>
+      <button type="button" onClick={() => loadAlcohol()}>
+        Next Drink{" "}
+      </button>
       <div className={style.container}>
         <img src={image} alt="" />
       </div>
-      <div className={style.btnContainer}>
-      
-      </div>
+      <div className={style.btnContainer}></div>
     </div>
   );
 }

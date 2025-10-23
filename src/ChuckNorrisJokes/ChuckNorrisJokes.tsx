@@ -47,7 +47,7 @@ export default function ChuckJoke(): JSX.Element {
           </button>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>Loading joke...</p>
       )}
     </div>
   );

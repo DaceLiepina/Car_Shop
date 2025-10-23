@@ -40,7 +40,7 @@ export default function RandomJoke():JSX.Element {
       {error && <p style={{ color: "red" }}>Error: {error}</p>}
 
       {joke ? (
-        <div className={style.container}>
+        <div className={style.container} >
           <p><strong>Setup: </strong> {joke.setup}</p>
           <p><strong>Punchline: </strong> {joke.punchline}</p>
           <button

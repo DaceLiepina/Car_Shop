@@ -1,6 +1,7 @@
 .container{
     border: 2px solid #ccc;
     border-radius: 16px;
+    color: white;
     padding: 20px;
     display: inline-block;
     background-color: #473e7cff

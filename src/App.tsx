@@ -11,11 +11,13 @@ import Playground from "./componenets/Playground/Playground";
 import Dogs from "./componenets/Dogs/Dogs";
 import UsePage from "./componenets/UsePage/UsePage";
 import RandomJoke from "./componenets/RandomJoke/RandomJoke";
+import ChuckNorrisJokes from "./ChuckNorrisJokes/ChuckNorrisJokes";
 
 function App(): JSX.Element {
   return (
     <div>
       <RandomJoke/>
+      <ChuckNorrisJokes/>
       <UsePage/>
       <Dogs/>
       <Playground/>

@@ -1,5 +1,6 @@
 import { useEffect, useState, type JSX } from "react";
 import type User from "./types/User";
+import { Link } from "react-router-dom";
 
 export default function UsePage(): JSX.Element {
   const [users, setUser] = useState<User[]>([]);
@@ -28,6 +29,7 @@ export default function UsePage(): JSX.Element {
             <div>Phone Nr: {user.phone}</div>
             <div>Email: {user.email}</div>
             <div>Zip code: {user.address.zipcode}</div>
+            <Link to={String(user.id)}>To user</Link>
           </li>
         ))}
         

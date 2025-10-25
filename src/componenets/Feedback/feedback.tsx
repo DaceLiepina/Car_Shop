@@ -17,16 +17,16 @@ export default function feedback(): JSX.Element {
     setDislikes(0);
   }
   return (
-    <div style = {{backgroundColor: "grey", borderRadius: "10px"}}>
-      <h2 style = {{fontWeight: "700",color:"creme"}}>Feedback</h2>
+    <div style = {{backgroundColor: "grey", borderRadius: "10px", marginTop:"50px"}}>
+      <h2 style = {{fontWeight: "300",color:"creme"}}>Feedback</h2>
       <div>
-        <span style={{ fontSize: "2rem" }}>{likes} 👍</span>
+        <span style={{ fontSize: "1.2rem" }}>{likes} 👍</span>
         <MyButton onClick={handleLike}>Like</MyButton>
 
         <MyButton onClick={handleLDislike}>Dislike</MyButton>
-        <span style={{ fontSize: "2rem" }}>👎 {dislikes}</span>
+        <span style={{ fontSize: "1.2rem" }}>👎 {dislikes}</span>
+        <MyButton onClick={handleReset}>Reset Results</MyButton>
       </div>
-      <MyButton onClick={handleReset}>Reset Results</MyButton>
     </div>
   );
 }

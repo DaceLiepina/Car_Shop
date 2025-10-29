@@ -18,4 +18,4 @@ export default function Layout():JSX.Element {
 }
 
 
-// Layout ir tas, kaa tas izskatiisies browserii
+// Layout ir tas, kaa tas izskatiisies browserii, pirmaa lapa

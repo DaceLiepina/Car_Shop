@@ -12,6 +12,8 @@ import { ThemeSwitcher } from "./componenets/ThemeSwitcher/ThemeSwitcher";
 import RandomJoke from "./componenets/RandomJoke/RandomJoke";
 import Sandwich from "./componenets/Sandwich/Sandwich";
 import ChuckJoke from "./ChuckNorrisJokes/ChuckNorrisJokes";
+import ProductsPage from "./Products/ProductsPage";
+import ProductPage from "./Products/ProductPage";
 
 function App(): JSX.Element {
   return (
@@ -28,7 +30,8 @@ function App(): JSX.Element {
         <Route path="randomjoke" element={<RandomJoke />} />
         <Route path="sandwich" element={<Sandwich />} />
         <Route path="chucknorrisjoke" element={<ChuckJoke/>} />
-
+        <Route path="products" element={<ProductsPage/>} />
+<Route path="products/:productId" element={<ProductPage />} />
       </Route>
     </Routes>
   );
@@ -36,6 +39,6 @@ function App(): JSX.Element {
 
 export default App;
 
-//path - linka nosaukums r mazo burtu
+//path - linka nosaukums ar mazo burtu - 
 
 // index element - tas components, kas paradisies peec nokluseejuma pie pirma renderinga

@@ -7,13 +7,13 @@
   /* Светлая тема */
   .light {
     background-color: #f9f9f9;
-    color: #ff0303;
+    color: #312626;
   }
   
   /* Темная тема */
   .dark {
     background-color: #333333;
-    color: #000000;
+    color: #cac1c1;
   }
   
   .themeToggle {

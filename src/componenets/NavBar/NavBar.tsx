@@ -47,6 +47,11 @@ export default function NavBar(): JSX.Element {
             Cuck Norris Joke
           </NavLink>
         </li>
+         <li className={style.listelElement}>
+          <NavLink to="products" className={style.link}>
+            Products
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

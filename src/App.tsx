@@ -14,6 +14,8 @@ import Sandwich from "./componenets/Sandwich/Sandwich";
 import ChuckJoke from "./ChuckNorrisJokes/ChuckNorrisJokes";
 import ProductsPage from "./Products/ProductsPage";
 import ProductPage from "./Products/ProductPage";
+import ContactForm from "./componenets/ContactForm/ContactForm";
+import Money from "./componenets/Money/Money";
 
 function App(): JSX.Element {
   return (
@@ -26,12 +28,14 @@ function App(): JSX.Element {
         <Route path="home" element={<Home />} />
         <Route path="userspage" element={<UsePage />} />
         <Route path="/userspage/:userId" element={<UserPage />} />
-        <Route path="themeswitcher" element={<ThemeSwitcher/>} />
+        <Route path="themeswitcher" element={<ThemeSwitcher />} />
         <Route path="randomjoke" element={<RandomJoke />} />
         <Route path="sandwich" element={<Sandwich />} />
-        <Route path="chucknorrisjoke" element={<ChuckJoke/>} />
-        <Route path="products" element={<ProductsPage/>} />
-<Route path="products/:productId" element={<ProductPage />} />
+        <Route path="chucknorrisjoke" element={<ChuckJoke />} />
+        <Route path="products" element={<ProductsPage />} />
+        <Route path="products/:productId" element={<ProductPage />} />
+        <Route path="contactform" element={<ContactForm />} />
+        <Route path="carddetails" element={<Money />} />
       </Route>
     </Routes>
   );
@@ -39,6 +43,6 @@ function App(): JSX.Element {
 
 export default App;
 
-//path - linka nosaukums ar mazo burtu - 
+//path - linka nosaukums ar mazo burtu -
 
 // index element - tas components, kas paradisies peec nokluseejuma pie pirma renderinga

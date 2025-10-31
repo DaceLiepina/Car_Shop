@@ -7,8 +7,10 @@
   max-width: 110%;
   align-items: center;
   justify-content: center;
+   z-index: 1000; 
   padding: 5px;
   margin: 5px;
+
 }
 .list {
   width: 100%;
@@ -57,4 +59,64 @@
 }
 .listElement {
   height: fit-content;
+}
+
+/* 🔹 Ekrāniem zem 900px — samazinam fontus un atstarpes */
+@media (max-width: 900px) {
+  .link {
+    font-size: 1.4rem;
+    padding: 4px 8px;
+  }
+
+  .home {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+  }
+
+  .list {
+    gap: 25px;
+  }
+
+  .navigation {
+    height: auto; /* ļauj augstumam pielāgoties saturam */
+    padding: 10px;
+  }
+}
+
+/* 🔹 Zem 700px — atļaujam divas rindas, centrējam 100% platumā */
+@media (max-width: 700px) {
+  .list {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .link,
+  .home {
+    font-size: 1.3rem;
+    padding: 4px 6px;
+  }
+
+  .navigation {
+    border-width: 15px;
+  }
+}
+
+/* 🔹 Zem 500px — kolonnas režīms (vai vēlāk – hamburger izvēlne) */
+@media (max-width: 500px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navigation {
+    border-width: 10px;
+    padding: 10px;
+  }
+
+  .link,
+  .home {
+    display: block;
+    font-size: 1.2rem;
+  }
 }

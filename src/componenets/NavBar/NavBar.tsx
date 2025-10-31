@@ -6,7 +6,7 @@ export default function NavBar(): JSX.Element {
   return (
     <nav className={style.navigation}>
       <ul className={style.list}>
-          <li className={style.listelElement}>
+        <li className={style.listelElement}>
           <NavLink to="home" className={style.home}>
             Home
           </NavLink>
@@ -26,7 +26,7 @@ export default function NavBar(): JSX.Element {
             Counter
           </NavLink>
         </li>
-      
+
         <li className={style.listelElement}>
           <NavLink to="userspage" className={style.link}>
             Users Page
@@ -47,9 +47,19 @@ export default function NavBar(): JSX.Element {
             Cuck Norris Joke
           </NavLink>
         </li>
-         <li className={style.listelElement}>
+        <li className={style.listelElement}>
           <NavLink to="products" className={style.link}>
             Products
+          </NavLink>
+        </li>
+        <li className={style.listelElement}>
+          <NavLink to="contactform" className={style.link}>
+            Contact Form
+          </NavLink>
+        </li>
+         <li className={style.listelElement}>
+          <NavLink to="carddetails" className={style.link}>
+            Card details
           </NavLink>
         </li>
       </ul>

@@ -11,16 +11,21 @@ export default function NavBar(): JSX.Element {
             Home
           </NavLink>
         </li>
+         <li className={style.listelElement}>
+          <NavLink to="registrationsform" className={style.registration}>
+            Registrations Form
+          </NavLink>
+        </li>
         <li className={style.listelElement}>
           <NavLink to="alcohol" className={style.link}>
             Alcohol
           </NavLink>
         </li>
-        <li className={style.listelElement}>
+        {/* <li className={style.listelElement}>
           <NavLink to="carshop" className={style.link}>
             Car Shop
           </NavLink>
-        </li>
+        </li> */}
         <li className={style.listelElement}>
           <NavLink to="counter" className={style.link}>
             Counter
@@ -37,11 +42,11 @@ export default function NavBar(): JSX.Element {
             Sandwich
           </NavLink>
         </li>
-        <li className={style.listelElement}>
+        {/* <li className={style.listelElement}>
           <NavLink to="randomjoke" className={style.link}>
             Randome Joke
           </NavLink>
-        </li>
+        </li> */}
         <li className={style.listelElement}>
           <NavLink to="chucknorrisjoke" className={style.link}>
             Cuck Norris Joke

@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./componenets/Layout/Layout";
 import Home from "./componenets/Home/Home";
 import Alcohol from "./componenets/Alcohol/Alcohol";
-import CarShop from "./componenets/CarShop/CarShop";
+//import CarShop from "./componenets/CarShop/CarShop";
 import Counter from "./componenets/Counter/Counter";
 import UsePage from "./componenets/UsePage/UsePage";
 import UserPage from "./componenets/UsePage/UserPage";
@@ -16,6 +16,7 @@ import ProductsPage from "./Products/ProductsPage";
 import ProductPage from "./Products/ProductPage";
 import ContactForm from "./componenets/ContactForm/ContactForm";
 import Money from "./componenets/Money/Money";
+import RegistrationsForm from "./componenets/RegistrationsForm/RegistrationsForm";
 
 function App(): JSX.Element {
   return (
@@ -23,7 +24,7 @@ function App(): JSX.Element {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="alcohol" element={<Alcohol />} />
-        <Route path="carshop" element={<CarShop />} />
+        {/* <Route path="carshop" element={<CarShop />} /> */}
         <Route path="counter" element={<Counter />} />
         <Route path="home" element={<Home />} />
         <Route path="userspage" element={<UsePage />} />
@@ -36,6 +37,7 @@ function App(): JSX.Element {
         <Route path="products/:productId" element={<ProductPage />} />
         <Route path="contactform" element={<ContactForm />} />
         <Route path="carddetails" element={<Money />} />
+         <Route path="registrationsform" element={<RegistrationsForm />} />
       </Route>
     </Routes>
   );

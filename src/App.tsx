@@ -17,6 +17,7 @@ import ProductPage from "./Products/ProductPage";
 import ContactForm from "./componenets/ContactForm/ContactForm";
 import Money from "./componenets/Money/Money";
 import RegistrationsForm from "./componenets/RegistrationsForm/RegistrationsForm";
+import SmartToDoList from "./componenets/SmartToDoList/SmartToDoList";
 
 function App(): JSX.Element {
   return (
@@ -38,6 +39,7 @@ function App(): JSX.Element {
         <Route path="contactform" element={<ContactForm />} />
         <Route path="carddetails" element={<Money />} />
          <Route path="registrationsform" element={<RegistrationsForm />} />
+          <Route path="smarttodolist" element={<SmartToDoList />} />
       </Route>
     </Routes>
   );

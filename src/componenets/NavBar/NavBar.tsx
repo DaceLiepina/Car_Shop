@@ -67,6 +67,11 @@ export default function NavBar(): JSX.Element {
             Card details
           </NavLink>
         </li>
+          <li className={style.listelElement}>
+          <NavLink to="smarttodolist" className={style.link}>
+            Smart to do List
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

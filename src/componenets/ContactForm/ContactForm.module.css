@@ -38,7 +38,8 @@
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: inherit; /* <- šī rindiņa nodrošina vienādu fontu */
 }
 
 .textarea {
